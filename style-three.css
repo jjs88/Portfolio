@@ -191,7 +191,7 @@ a:active {
   height:100%;
   background-color: black;
   opacity: .5;
-  z-index: 98
+  z-index: 98;
 }
 
 /*Top name styles */
@@ -1806,7 +1806,7 @@ label[for="card-flip"]:hover > .card {
     position: fixed;
     top:0;
     left:0;
-    z-index:110;
+    z-index:90;
     width: 100%;
     background-color: #730073;
 }
@@ -1890,7 +1890,7 @@ label[for="card-flip"]:hover > .card {
   position: fixed;
   top:0;
   left:0;
-  z-index:110;
+  z-index:90;
   width: 100%;
   background-color: #730073;
   /*opacity: .7;*/
