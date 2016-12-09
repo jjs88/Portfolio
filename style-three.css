@@ -8,7 +8,6 @@ body {
   font-family: 'Roboto', serif;
 }
 
-
 .container {
   width: 100%;
   /*border: 1px solid black;*/
@@ -320,12 +319,20 @@ input[type="radio"] {
 
 /*SKILLS Styling*/
 
+.skills-content {
+  width:67%;
+  text-align: left;
+  margin:0 auto;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
 
 /*container for graph. graph will be a flex box that is aligned in the center of page*/
 .graph-container {
   /*margin:0 auto;*/
   /*text-align: center;*/
-  height:22rem;
+  height:29rem;
   /*display: flex;*/
   /*align-items:flex-start;*/
   /*justify-content:center;*/
@@ -1430,6 +1437,11 @@ label[for="card-flip"]:hover > .card {
     padding:1.5rem;
   }
 
+  .fixed {
+    display: flex;
+    opacity: .6; 
+  }
+
 
   
   /*need to target all list items as nth-child since the last item still overrides and has the margin from 722px @media query*/
@@ -1529,6 +1541,10 @@ label[for="card-flip"]:hover > .card {
 
 
   /*Nav Styles*/
+
+/*  .fixed {
+    display: flex;
+  }*/
 
   .main-nav {
     font-size: 1.2rem;
@@ -1785,6 +1801,19 @@ label[for="card-flip"]:hover > .card {
     width:30px;
   }
 
+  .fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:110;
+    width: 100%;
+    background-color: #730073;
+}
+
+ .non-fixed {
+   margin-top: 4.5rem;
+ }
+
 
 }
 
@@ -1855,6 +1884,21 @@ label[for="card-flip"]:hover > .card {
     height:40px;
     width:40px;
   }
+
+.fixed {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:110;
+  width: 100%;
+  background-color: #730073;
+  /*opacity: .7;*/
+
+}
+
+.non-fixed {
+  margin-top: 4.5rem;
+}
 
 }
 
