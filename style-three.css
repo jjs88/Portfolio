@@ -93,7 +93,7 @@ body {
 
 .main-nav a:link,
 .carousel a:link {
-  
+
     color: #730073;
 }
 
@@ -549,22 +549,51 @@ div[class^="bar-"]:hover .tooltip {
   animation: 1s current-project; 
 }
 
-/*circle current */
+/*circle current highlighted for arrow / circle click*/
 
 #accordion-slide-one:checked + 
-.carousel-slide > label[for="accordion-one-left"] + 
+.carousel-slide > label + 
 label + h3 + p + p + div > 
 label[for="accordion-slide-one"],
 
 #accordion-slide-two:checked + 
-.carousel-slide > label[for="accordion-two-left"] + 
-label + img + div > label[for="accordion-slide-one"] +
+.carousel-slide > label + 
+label + img + div > label +
 label[for="accordion-slide-two"],
 
 #accordion-slide-three:checked + 
-.carousel-slide > label[for="accordion-three-left"] + 
-label + img + div > label[for="accordion-slide-one"] + label[for="accordion-slide-two"] +
-label[for="accordion-slide-three"] {
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="accordion-slide-three"],
+
+#accordion-one-left:checked + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="accordion-slide-three"],
+
+#accordion-one-right:checked + input +
+.carousel-slide > label + 
+label + img + div > label +
+label[for="accordion-slide-two"],
+
+#accordion-two-left:checked + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="accordion-slide-one"],
+
+#accordion-two-right:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="accordion-slide-three"],
+
+#accordion-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label[for="accordion-slide-two"],
+
+#accordion-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="accordion-slide-one"] {
+  
   color:white;
 }
 
@@ -593,6 +622,9 @@ label[for="accordion-slide-three"] {
   animation: 1s current-project; 
 }
 
+
+
+
 /*circle current */
 
 #tab-slide-one:checked + 
@@ -608,9 +640,39 @@ label[for="tab-slide-two"],
 #tab-slide-three:checked + 
 .carousel-slide > label[for="tab-three-left"] + 
 label + img + div > label[for="tab-slide-one"] + label[for="tab-slide-two"] +
-label[for="tab-slide-three"] {
+label[for="tab-slide-three"],
+
+#tab-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="tab-slide-three"],
+
+#tab-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="tab-slide-two"],
+
+#tab-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="tab-slide-one"],
+
+#tab-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="tab-slide-three"],
+
+#tab-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="tab-slide-two"],
+
+#tab-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="tab-slide-one"] {
+  
   color:white;
 }
+
 
 /*IMAGE GALLERY CONTROLS*/
 
@@ -653,7 +715,36 @@ label[for="gallery-slide-two"],
 #gallery-slide-three:checked + 
 .carousel-slide > label[for="gallery-three-left"] + 
 label + img + div > label[for="gallery-slide-one"] + label[for="gallery-slide-two"] +
-label[for="gallery-slide-three"] {
+label[for="gallery-slide-three"],
+
+#gallery-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="gallery-slide-three"],
+
+#gallery-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="gallery-slide-two"],
+
+#gallery-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="gallery-slide-one"],
+
+#gallery-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="gallery-slide-three"],
+
+#gallery-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="gallery-slide-two"],
+
+#gallery-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="gallery-slide-one"] {
+  
   color:white;
 }
 
@@ -698,10 +789,38 @@ label[for="cart-slide-two"],
 #cart-slide-three:checked + 
 .carousel-slide > label[for="cart-three-left"] + 
 label + img + div > label[for="cart-slide-one"] + label[for="cart-slide-two"] +
-label[for="cart-slide-three"] {
+label[for="cart-slide-three"],
+
+#cart-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="cart-slide-three"],
+
+#cart-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="cart-slide-two"],
+
+#cart-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="cart-slide-one"],
+
+#cart-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="cart-slide-three"],
+
+#cart-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="cart-slide-two"],
+
+#cart-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="cart-slide-one"] {
+  
   color:white;
 }
-
 
 
 /* FORMS CONTROLS*/
@@ -727,6 +846,55 @@ label[for="cart-slide-three"] {
   display: block;
   -webkit-animation: 1s current-project;
   animation: 1s current-project; 
+}
+
+
+/*circle current highlight*/
+
+#forms-slide-one:checked + 
+.carousel-slide > label[for="forms-one-left"] + 
+label + h3 + p + p + div > 
+label[for="forms-slide-one"],
+
+#forms-slide-two:checked + 
+.carousel-slide > label[for="forms-two-left"] + 
+label + img + div > label[for="forms-slide-one"] +
+label[for="forms-slide-two"],
+
+#forms-slide-three:checked + 
+.carousel-slide > label[for="forms-three-left"] + 
+label + img + div > label[for="forms-slide-one"] + label[for="forms-slide-two"] +
+label[for="forms-slide-three"],
+
+#forms-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="forms-slide-three"],
+
+#forms-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="forms-slide-two"],
+
+#forms-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="forms-slide-one"],
+
+#forms-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="forms-slide-three"],
+
+#forms-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="forms-slide-two"],
+
+#forms-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="forms-slide-one"] {
+  
+  color:white;
 }
 
 
@@ -797,9 +965,39 @@ label[for="bus-card-slide-two"],
 #bus-card-slide-three:checked + 
 .carousel-slide > label[for="bus-card-three-left"] + 
 label + img + div > label[for="bus-card-slide-one"] + label[for="bus-card-slide-two"] +
-label[for="bus-card-slide-three"] {
+label[for="bus-card-slide-three"],
+
+#bus-card-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="bus-card-slide-three"],
+
+#bus-card-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="bus-card-slide-two"],
+
+#bus-card-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="bus-card-slide-one"],
+
+#bus-card-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="bus-card-slide-three"],
+
+#bus-card-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="bus-card-slide-two"],
+
+#bus-card-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="bus-card-slide-one"] {
+  
   color:white;
 }
+
 
 /* HACKATHON ONE CONTROLS*/
 
@@ -842,10 +1040,38 @@ label[for="hack-one-slide-two"],
 #hack-one-slide-three:checked + 
 .carousel-slide > label[for="hack-one-three-left"] + 
 label + img + div > label[for="hack-one-slide-one"] + label[for="hack-one-slide-two"] +
-label[for="hack-one-slide-three"] {
+label[for="hack-one-slide-three"],
+
+#hack-one-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="hack-one-slide-three"],
+
+#hack-one-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="hack-one-slide-two"],
+
+#hack-one-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="hack-one-slide-one"],
+
+#hack-one-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="hack-one-slide-three"],
+
+#hack-one-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="hack-one-slide-two"],
+
+#hack-one-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="hack-one-slide-one"] {
+  
   color:white;
 }
-
 
 /*Projects Selection controls*/
 
