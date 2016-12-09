@@ -924,6 +924,41 @@ div > label[for="forms-slide-one"] {
   animation: 1s current-project; 
 }
 
+/*circle current highlights*/
+
+#btn-comp-slide-one:checked + 
+.carousel-slide > label[for="btn-comp-one-left"] + 
+label + h3 + p + p + div > 
+label[for="btn-comp-slide-one"],
+
+#btn-comp-slide-two:checked + 
+.carousel-slide > label[for="btn-comp-two-left"] + 
+label + img + div > label[for="btn-comp-slide-one"] +
+label[for="btn-comp-slide-two"],
+
+#btn-comp-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label[for="btn-comp-slide-two"],
+
+#btn-comp-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="btn-comp-slide-two"],
+
+#btn-comp-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="btn-comp-slide-one"],
+
+#btn-comp-two-right:checked + input + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="btn-comp-slide-one"]
+{
+  color:white;
+}
+
 
 /* BUSINESS CARD CONTROLS*/
 
