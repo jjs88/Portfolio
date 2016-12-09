@@ -1127,6 +1127,80 @@ div > label[for="hack-one-slide-one"] {
   color:white;
 }
 
+
+/* TEAM COLLAB APP CONTROLS*/
+
+/* circles */
+
+#collab-slide-one:checked + .carousel-slide,
+#collab-slide-two:checked + .carousel-slide,
+#collab-slide-three:checked + .carousel-slide {
+  display: block;
+  -webkit-animation: 1s current-project;
+  animation: 1s current-project; 
+}
+
+/*arrows*/
+
+#collab-one-right:checked + input + .carousel-slide,
+#collab-two-right:checked + input + .carousel-slide,
+#collab-three-right:checked + input + input + .carousel-slide,
+#collab-one-left:checked + input + input + .carousel-slide,
+#collab-two-left:checked + input + .carousel-slide,
+#collab-three-left:checked + input + input + .carousel-slide {
+  display: block;
+  -webkit-animation: 1s current-project;
+  animation: 1s current-project; 
+}
+
+/*circle current */
+
+#collab-slide-one:checked + 
+.carousel-slide > label[for="collab-one-left"] + 
+label + h3 + p + p + div > 
+label[for="collab-slide-one"],
+
+#collab-slide-two:checked + 
+.carousel-slide > label[for="collab-two-left"] + 
+label + img + div > label[for="collab-slide-one"] +
+label[for="collab-slide-two"],
+
+#collab-slide-three:checked + 
+.carousel-slide > label[for="collab-three-left"] + 
+label + img + div > label[for="collab-slide-one"] + label[for="collab-slide-two"] +
+label[for="collab-slide-three"],
+
+#collab-one-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label +
+label + label[for="collab-slide-three"],
+
+#collab-one-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label +
+label[for="collab-slide-two"],
+
+#collab-two-left:checked + input +
+.carousel-slide > label + 
+label + h3 + p + p + div > 
+label[for="collab-slide-one"],
+
+#collab-two-right:checked + input + 
+.carousel-slide > label + 
+label + img + div > label + label +
+label[for="collab-slide-three"],
+
+#collab-three-left:checked + input + input +
+.carousel-slide > label + 
+label + img + div > label + label[for="collab-slide-two"],
+
+#collab-three-right:checked + input + input +
+.carousel-slide > label + label + h3 + p + p +
+div > label[for="collab-slide-one"] {
+  
+  color:white;
+}
+
 /*Projects Selection controls*/
 
 label[for="accordion"], 
@@ -1136,7 +1210,8 @@ label[for="cart"],
 label[for="forms"],
 label[for="btn-comp"],
 label[for="bus-card"],
-label[for="hack-one"]
+label[for="hack-one"],
+label[for="collab"]
  {
   background-color: white;
 }
@@ -1148,7 +1223,8 @@ label[for="cart"]:hover,
 label[for="forms"]:hover,
 label[for="btn-comp"]:hover,
 label[for="bus-card"]:hover,
-label[for="hack-one"]:hover
+label[for="hack-one"]:hover,
+label[for="collab"]:hover
  {
   background-color: #730073;
   color:white;
@@ -1234,6 +1310,15 @@ label[for="hack-one"]:hover
   background-color: #b266b2;
 }
 
+#collab:checked ~ label[for="collab"] + .content {
+  display: block;
+  -webkit-animation: 1s current-project;
+    animation: 1s current-project;
+}
+
+#collab:checked ~ label[for="collab"] {
+  background-color: #b266b2;
+}
 
 
 
