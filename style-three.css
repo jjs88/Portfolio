@@ -399,25 +399,25 @@ div[class^="bar-"]:hover .tooltip {
 .bar-one {
   width:2rem;
   height:5.5rem;
-  background-color: orange;
+  background-color: #45C594;
 }
 
 .bar-two {
   width:2rem;
   height:4rem;
-  background-color: lightblue;
+  background-color: #FA8072;
 }
 
 .bar-three {
   width:2rem;
   height:2rem;
-  background-color: green;
+  background-color: #fac472;
 }
 
 .bar-four {
   width:2rem;
   height:4rem;
-  background-color: yellow;
+  background-color: #fa72a8;
 }
 
 
@@ -1419,6 +1419,7 @@ label[for="card-flip"]:hover > .card {
 
   .about-me-content {
     font-size: 1rem;
+    color:#737300;
   }
 
   .row {
