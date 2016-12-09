@@ -1470,8 +1470,8 @@ label[for="card-flip"]:hover > .card {
     }
 
    .front, .back {
-   width:330px;
-     height:200px;
+     width:330px;
+     height:210px;
      margin:0 0;
    }
 
@@ -1583,14 +1583,9 @@ label[for="card-flip"]:hover > .card {
       text-align: left;
     }
 
-   .front {
-   width:330px;
-     height:200px;
-   }
-
-   .back {
+   .front, .back {
      width:330px;
-     height:200px;
+     height:210px;
    }
 
    .card-container h1 {
