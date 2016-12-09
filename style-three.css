@@ -5,7 +5,8 @@
 
 body {
   background-color: #f2e5f2;
-  font-family: 'Roboto', serif;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  /*font-family: 'Roboto', serif;*/
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #730073;
 }
 
@@ -332,7 +333,7 @@ input[type="radio"] {
 .graph-container {
   /*margin:0 auto;*/
   /*text-align: center;*/
-  height:29rem;
+  height:31rem;
   /*display: flex;*/
   /*align-items:flex-start;*/
   /*justify-content:center;*/
@@ -367,7 +368,7 @@ input[type="radio"] {
 }
 
 .x-axis {
-
+  font-size: 1rem;
 }
 
 .x-axis li{
@@ -384,6 +385,17 @@ input[type="radio"] {
   top:2.7rem;
   transform: rotate(50deg);
 }
+
+.x-axis li:nth-child(3) span {
+  margin-left:9px;
+  top:2.3rem;
+}
+
+.x-axis li:nth-child(4) span {
+  margin-left:9px;
+  top:2.3rem;
+}
+
 
 /*graph bars */
 
