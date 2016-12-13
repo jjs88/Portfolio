@@ -3,21 +3,29 @@
 }
 
 
+.jump-anchor {
+	padding-top:40px;
+	margin-bottom: -40px;
+}
+
 body {
-  background-color: #f2e5f2;
- font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  /*background-color: #f2e5f2;*/
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   /*font-family: 'Roboto', serif;*/
 }
 
 .container {
   width: 100%;
-  /*border: 1px solid black;*/
   overflow: auto;
   text-align: center;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   display: block;
   font-size: 1.2rem;
   color: #730073;
+  /*override for fixed nav bar anchor jumps*/
+  padding-top: 70px;
+  padding-bottom: 90px;
+  border-bottom:1px solid #bbb;
 }
 
 
@@ -104,6 +112,7 @@ body {
 }
 
 
+
 /*anchor links styles */
 
 /* unvisited link */
@@ -137,6 +146,18 @@ a:active {
 
 /*Nav Styles*/
 
+
+/*override for fixed top nav bar anchor selection*/
+
+
+
+#top {
+	border-bottom: none;
+	padding-top:0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 .main-nav {
   font-size: 1.2rem;
 }
@@ -159,11 +180,6 @@ a:active {
 }
 
 
-
-.search-bar input[type="text"]:hover {
-  /*background-color:  #cc99cc;*/
-  border: 1px solid #008000;
-}
 
 #modal-toggle:checked + .modal,
 #modal-toggle:checked + .modal + .modal-cover {
@@ -247,11 +263,45 @@ a:active {
 
 /*search box styles*/
 
+.search {
+	position: relative;
+	/*padding:5px;*/
+	/*vertical-align: bottom;*/
+}
+
+
+.search-bar input[type="text"]:focus {
+	outline: none;
+}
+
+.search-bar input[type="text"]:focus + label ~ .search-text  {
+	top:0;
+	font-size: .9rem;
+}
+
+/*.search-bar {
+	border-bottom: 1px solid white;
+}*/
+
 .search-bar input[type="text"] {
   width:80%;
   padding:.3rem 0;
   margin-right:.2rem;
-  border-width:0
+  margin-bottom: .1rem;
+  border-top:0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid purple;
+  text-transform: uppercase;
+  color:purple;
+}
+
+input::-webkit-input-placeholder {
+  color: purple;
+}
+
+input:-moz-placeholder{
+  color: purple;
 }
 
 
@@ -1507,6 +1557,18 @@ label[for="card-flip"]:hover > .card {
 
 
 
+/*footer styles*/
+
+/*override for anchor jump at bottom. dont want all the padding*/
+.footer {
+	border-bottom: none;
+	padding-top:0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
 /*key frames*/
 
 
@@ -1514,8 +1576,8 @@ label[for="card-flip"]:hover > .card {
   0% {
     /*display: block;*/
     opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
   }
   100% {
     opacity: 1;
@@ -1590,6 +1652,7 @@ label[for="card-flip"]:hover > .card {
 
 @media screen and (max-width: 360px) {
 
+
   #menu-button-open {
   visibility: visible;
   }
@@ -1624,8 +1687,20 @@ label[for="card-flip"]:hover > .card {
   }
 
   .fixed {
-    display: flex;
+    display: block;
     opacity: .6; 
+  }
+
+    .search-text {
+	position: absolute;
+	top:20px;
+	left:35px;
+}
+
+  .search-bar input[type="text"]:focus + label ~ .search-text  {
+     top:0;
+	 left:35px;
+     font-size: .9rem;
   }
 
 
@@ -1763,6 +1838,21 @@ label[for="card-flip"]:hover > .card {
   .main-nav ul li:last-child {
     margin:0; /* need this so the last item doesn't fall to next line when minimizing screen */
   }
+
+
+   .search-text  {
+   		position: absolute;
+		top:20px;
+		left:55px;
+  	}
+
+  .search-bar input[type="text"]:focus + label ~ .search-text  {
+		top:0;
+		left:55px;
+		font-size: .9rem;
+  }
+
+
 
    .projects-container label {
     text-align:left;
@@ -2011,6 +2101,7 @@ label[for="card-flip"]:hover > .card {
 
   .main-nav ul li {
     font-size: 1.6rem;
+    padding-bottom: 1.8rem;
   }
 
   .main-nav ul {
@@ -2022,6 +2113,18 @@ label[for="card-flip"]:hover > .card {
   #name {
     font-size: 1.6rem;
     margin-top:1.1rem;
+  }
+
+  .search-text {
+	position: absolute;
+	top:20px;
+	left:35px;
+}
+
+  .search-bar input[type="text"]:focus + label ~ .search-text  {
+     top:0;
+	 left:35px;
+     font-size: .9rem;
   }
 
 
@@ -2074,16 +2177,16 @@ label[for="card-flip"]:hover > .card {
     width:40px;
   }
 
-.fixed {
+/*.fixed {
   position: fixed;
   top:0;
   left:0;
   z-index:90;
   width: 100%;
   background-color: #730073;
-  /*opacity: .7;*/
+  opacity: .7;
 
-}
+}*/
 
 .non-fixed {
   margin-top: 4.5rem;
