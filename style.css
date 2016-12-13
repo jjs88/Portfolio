@@ -369,11 +369,15 @@ input[type="radio"] {
 }
 
 
+.test {
+	  height: 31rem;
+}
+
 /*container for graph. graph will be a flex box that is aligned in the center of page*/
 .graph-container {
   /*margin:0 auto;*/
   /*text-align: center;*/
-  height:31rem;
+  /*height:31rem;*/
   /*display: flex;*/
   /*align-items:flex-start;*/
   /*justify-content:center;*/
