@@ -1597,13 +1597,21 @@ label[for="card-flip"]:hover > .card {
     width:30px;
   }
 
+/*  .card-container .inline * {
+    display: inline-block;
+  }*/
+
+  .inline p {
+    display: inline-block;
+  }
+
 
   .card-container .inline p {
     font-size: 10px;
   }
 
   .card-container .inline p {
-    width: 26%;
+    width: 24%;
   }
 
   .card-container ul li img {
@@ -1715,7 +1723,7 @@ label[for="card-flip"]:hover > .card {
   }
 
   .card-container .inline p {
-    width: 26%;
+    width: 24%;
   }
 
   .card-container ul li img {
