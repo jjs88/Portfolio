@@ -1232,8 +1232,8 @@ label[for="collab"]:hover
 
 #accordion:checked ~ label[for="accordion"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+ /* -webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #accordion:checked ~ label[for="accordion"] {
@@ -1242,8 +1242,8 @@ label[for="collab"]:hover
 
 #tab:checked ~ label[for="tab"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+ /* -webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #tab:checked ~ label[for="tab"] {
@@ -1252,8 +1252,8 @@ label[for="collab"]:hover
 
 #gallery:checked ~ label[for="gallery"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+ /* -webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #gallery:checked ~ label[for="gallery"] {
@@ -1262,8 +1262,8 @@ label[for="collab"]:hover
 
 #cart:checked ~ label[for="cart"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+  /*-webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #cart:checked ~ label[for="cart"] {
@@ -1272,8 +1272,8 @@ label[for="collab"]:hover
 
 #forms:checked ~ label[for="forms"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+  /*-webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #forms:checked ~ label[for="forms"] {
@@ -1282,8 +1282,8 @@ label[for="collab"]:hover
 
 #btn-comp:checked ~ label[for="btn-comp"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+  /*-webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #btn-comp:checked ~ label[for="btn-comp"] {
@@ -1292,8 +1292,8 @@ label[for="collab"]:hover
 
 #bus-card:checked ~ label[for="bus-card"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+ /* -webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #bus-card:checked ~ label[for="bus-card"] {
@@ -1302,8 +1302,8 @@ label[for="collab"]:hover
 
 #hack-one:checked ~ label[for="hack-one"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+/*  -webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #hack-one:checked ~ label[for="hack-one"] {
@@ -1312,8 +1312,8 @@ label[for="collab"]:hover
 
 #collab:checked ~ label[for="collab"] + .content {
   display: block;
-  -webkit-animation: 1s current-project;
-    animation: 1s current-project;
+  -/*webkit-animation: 1s current-project;
+    animation: 1s current-project;*/
 }
 
 #collab:checked ~ label[for="collab"] {
