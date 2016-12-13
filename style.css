@@ -82,6 +82,28 @@ body {
   width: 100%;
 }
 
+
+/*on load fade-in effect on page*/
+#top {
+	-webkit-animation: fadeIn ease-in 1.3s;
+}
+#About {
+	-webkit-animation: fadeIn ease-in 1s;
+}
+
+#Skills {
+	-webkit-animation: fadeIn ease-in 1.5s;	
+}
+
+#Projects {
+	-webkit-animation: fadeIn ease-in 2s;
+}
+
+#Contact {
+	-webkit-animation: fadeIn ease-in 2.5s;
+}
+
+
 /*anchor links styles */
 
 /* unvisited link */
@@ -104,10 +126,7 @@ a:visited {
 
 /* mouse over link */
 .main-nav a:hover {
-  background-color: #730073;
-  color:white;
-  border-radius: 1rem;
-  padding: .3rem;
+  -webkit-animation: top-bar 1.2s;
 }
 
 /* selected link */
@@ -200,8 +219,25 @@ a:active {
 .name {
   font-size: 1.5rem;
   padding: .3rem 0;
+  -webkit-animation: fadeIn ease-in 2.5s;
 }
 
+/*top nav animation*/
+#about {
+	 -webkit-animation: fadeInNav ease-in 4s;	
+}
+
+#projects {
+	-webkit-animation: fadeInNav ease-in 4.3s;
+}
+
+#skills {
+	-webkit-animation: fadeInNav ease-in 4.6s;
+}
+
+#contact {
+	-webkit-animation: fadeInNav ease-in 5s;
+}
 
 /*anchor styles*/
 .main-nav a {
@@ -315,6 +351,10 @@ input[type="radio"] {
 .align-left {
   text-align: left;
   font-size: 1.2rem;
+}
+
+#hello {
+	font-size: 1.5rem;
 }
 
 
@@ -1483,7 +1523,7 @@ label[for="card-flip"]:hover > .card {
 @-webkit-keyframes carousel-easein {
   0% {
     opacity: 0;
-    tra
+    
   }
 
   50% {
@@ -1494,6 +1534,51 @@ label[for="card-flip"]:hover > .card {
     opacity: 1;
   }
 }
+
+@-webkit-keyframes top-bar {
+	0% {
+	}
+
+	50% {
+		color:#b97fb9;
+	}
+
+	100% {
+		background-color: #730073;
+		color:white;
+		border-radius: 1rem;
+		padding: .3rem;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: .8;
+	}
+}
+
+@-webkit-keyframes fadeInNav {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .1;
+	}
+
+	100% {
+		opacity: .1;
+	}
+}
+
 
 
 
