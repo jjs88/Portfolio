@@ -1688,7 +1688,7 @@ label[for="card-flip"]:hover > .card {
 
   .fixed {
     display: block;
-    opacity: .6; 
+    /*opacity: .6; */
   }
 
     .search-text {
